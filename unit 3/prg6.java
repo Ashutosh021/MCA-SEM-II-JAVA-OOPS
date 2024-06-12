@@ -1,3 +1,9 @@
+// Create a class WriteEmployee having main method. Ask user to enter
+// details of an employee and set them in an Employee object. Store details
+// of this object in a file emp.txt.
+//  Read employee details from the file and display those details. 
+
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,7 +24,7 @@ public class prg6 {
         empBasic = s.nextInt();
         input.close();
         s.close();
-        File f = new File("src\\filehandling\\emp.txt");
+        File f = new File("D:\\VS CODE PROGRAM\\MCA\\2nd SEM\\Java LAB\\unit 3\\emp.txt");
         try {
             FileWriter fw = new FileWriter(f, true);
             fw.write("employee name:" + empName + " ");
